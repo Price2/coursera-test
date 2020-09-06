@@ -1,0 +1,227 @@
+
+/*The Desktop Version*/
+
+@media (min-width: 992px){
+	/*Giving all the elements border box sizing*/
+	*{
+	box-sizing: border-box;
+}
+   /*Changing fonts for our header and its size.*/
+	h1.header {
+		margin-bottom: 30px;
+		font-family: verdana;
+		  text-align: center;
+		  font-size: 175%;
+	}
+
+/*Giving the span a different look all together, having set its position to relative for the section title to be anchored in*/
+			span {
+				border: 1px solid black;
+				font-size: 100%;
+				position:relative;
+				float:left;
+				margin: 20px;
+				padding: 60px 20px 20px;
+				background-color: #990000;
+				color: #FF8000;
+
+				
+			}
+/*Section titles, changing colors, font and size setting their position to absolute as to its ancestor span (relative) to be its anchor*/
+					.sectionheader1, .sectionheader2, .sectionheader3 {
+					font-family: verdana;
+					font-size: 125%;
+						border: 1px solid black;
+						width: 40%;
+						position:absolute;
+						top:0;
+						right:0;
+						text-align: center;
+						padding: 10px;
+						margin: 0px;
+						background-color: #990099;
+						color: #000000;
+						
+						
+					}
+/*Overriding colors so each section title can have a unique color and look*/
+
+	h1.sectionheader2{
+		border: 1px solid black;
+	 background-color: #00FF00;
+	}
+		h1.sectionheader3{
+			border: 1px solid black;
+			background-color:#FFE5CC;
+		}
+
+			span.span2{
+			background-color: #CC99FF;
+			color: #FFFFFF;
+			}
+				span.span3{
+					background-color: #808080;
+					color: #00FF00;
+				}
+/*==========================================================================================*/
+
+/*Setting the div that contains all sections to take 100% width of the browser's current width*/
+.row{
+	width: 100%;
+}
+
+	.col-lg-4{
+		float: left;
+		width : 33%;
+		margin: 1px;
+
+
+	}
+}
+
+/*============================================================================*/
+
+/* MEDIUM-DEVICES/Tablet */
+@media (min-width: 768px) and (max-width: 991px){
+
+	/*Same dissection and explanation as to the desktop version with width of coloumns modified to fit as required.*/
+	*{
+	box-sizing: border-box;
+}
+	h1.header {
+		margin-bottom: 30px;
+		font-family: verdana;
+		  text-align: center;
+		  font-size: 175%;
+	}
+/* 2 coloumns to take 100% width of the screen in tablets and 1 coloumn to take the entire row*/
+		.col-md-6{
+			float: left;
+			width: 50%;
+
+		    }
+			.col-md-12{
+				float:left;
+				width: 100%;
+			     }
+			     /*====================================================================*/
+
+						     span {
+							border: 1px solid black;
+							font-size: 100%;
+							position:relative;
+							float:left;
+							margin: 10px;
+							padding: 60px 20px 20px;
+							background-color: #990000;
+							color: #FF8000;
+
+							
+						}
+
+								.sectionheader1, .sectionheader2, .sectionheader3 {
+								font-family: verdana;
+								font-size: 125%;
+									border: 1px solid black;
+									width: 40%;
+									position:absolute;
+									top:0;
+									right:0;
+									text-align: center;
+									padding: 10px;
+									margin: 0px;
+									background-color: #990099;
+									color: #000000;
+									
+									}
+		h1.sectionheader2{
+		border: 1px solid black;
+	 background-color: #00FF00;
+	}
+		h1.sectionheader3{
+			border: 1px solid black;
+			background-color:#FFE5CC;
+		}
+
+		span.span2{
+		background-color: #CC99FF;
+		color: #FFFFFF;
+		}
+		span.span3{
+			background-color: #808080;
+			color: #00FF00;
+		}
+
+
+}
+
+/*Small Devices/Mobiles*/
+
+@media (max-width: 767px){
+
+/*Small coloumn having the entire screen for each coloumn for mobile devices.*/
+.col-sm-12{
+	float:left;
+	width: 100%;
+
+	}
+
+   /*Centering our Header and everything as previous*/
+	h1.header {
+		margin-bottom: 30px;
+		font-family: verdana;
+	 	 text-align: center;
+	  	font-size: 175%;
+	}
+	 		span {
+				border: 1px solid black;
+				font-size: 100%;
+				position:relative;
+				float:left;
+				margin: 10px;
+				padding: 60px 20px 20px;
+				background-color: #990000;
+				color: #FF8000;
+
+	
+				}
+
+						.sectionheader1, .sectionheader2, .sectionheader3 {
+						font-family: verdana;
+						font-size: 125%;
+							border: 1px solid black;
+							width: 40%;
+							position:absolute;
+							top:0;
+							right:0;
+							text-align: center;
+							padding: 10px;
+							margin: 0px;
+							background-color: #990099;
+							color: #000000;
+							
+							}
+
+	h1.sectionheader2{
+	border: 1px solid black;
+ background-color: #00FF00;
+}
+		h1.sectionheader3{
+			border: 1px solid black;
+			background-color:#FFE5CC;
+		}
+
+			span.span2{
+			background-color: #CC99FF;
+			color: #FFFFFF;
+			}
+				span.span3{
+					background-color: #808080;
+					color: #00FF00;
+				}
+
+
+}
+
+	
+}
